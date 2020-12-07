@@ -6,36 +6,53 @@ enum WindowState:String {
 }
 
 class Window {
-    let windowNumber: Int
+    let number: Int
     var isRightWingOpened: Bool = false
     var isLeftWingOpened: Bool = false
     
-    var isWindowOpened: Bool {
+    var previousNumber: Int {
+        if number == 1 { return Castle.totalWindowsCount } //New business rule
+        else { return number - 1 }
+    }
+    
+    var nextNumber: Int {
+        if number == Castle.totalWindowsCount { return 1 } //New business rule
+        else { return number + 1 }
+    }
+    
+    var isOpened: Bool {
         return isRightWingOpened && isLeftWingOpened
     }
-    var isWindowClosed: Bool {
+    var isClosed: Bool {
         return !isRightWingOpened && !isLeftWingOpened
     }
     
     var state:WindowState {
-        if isWindowClosed { return .closed }
-        if isWindowOpened { return .opened }
+        if isClosed { return .closed }
+        if isOpened { return .opened }
         if isRightWingOpened { return .rightWingOpened }
         else { return .leftWingOpened }
     }
     
     init(number: Int) {
-        self.windowNumber = number
+        self.number = number
     }
     
     func getVisitedBy(visitor: Visitor) {
-        if visitor.interactsWithWindow(windowNumber: windowNumber) {
-            if visitor.isOpenLeftCloseRightVisitor {
+        if visitor.interactsWithWindow(windowNumber: number) {
+            switch visitor.type {
+            case .first:
+                isLeftWingOpened = true
+            case .second:
+                isRightWingOpened = true
+            case .pair:
+                isLeftWingOpened = false
+                isRightWingOpened = true
+            case .odd:
                 isLeftWingOpened = true
                 isRightWingOpened = false
-            } else {
-                isRightWingOpened = true
-                isLeftWingOpened = false
+            case .last:
+                isRightWingOpened = !isRightWingOpened
             }
         }
     }

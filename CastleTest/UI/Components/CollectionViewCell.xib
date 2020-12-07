@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="WindowCollectionViewCell" customModule="CastleTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0Y-G6-t6z">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="By6-1h-aGx">
+                                <rect key="frame" x="0.0" y="5" width="40" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="2et-Cf-QNS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="O05-Uo-JyE">
+                                <rect key="frame" x="5" y="18" width="30" height="17"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBm-Oz-xP0">
+                                        <rect key="frame" x="0.0" y="0.0" width="13" height="17"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f64-nx-Y4e">
+                                        <rect key="frame" x="17" y="0.0" width="13" height="17"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="O05-Uo-JyE" firstAttribute="leading" secondItem="R0Y-G6-t6z" secondAttribute="leading" constant="5" id="2e4-Wy-yWw"/>
+                            <constraint firstItem="O05-Uo-JyE" firstAttribute="top" secondItem="By6-1h-aGx" secondAttribute="bottom" constant="5" id="LLo-E4-QQ2"/>
+                            <constraint firstAttribute="trailing" secondItem="By6-1h-aGx" secondAttribute="trailing" id="LoQ-Gg-9Dw"/>
+                            <constraint firstItem="By6-1h-aGx" firstAttribute="leading" secondItem="R0Y-G6-t6z" secondAttribute="leading" id="Uth-h1-aOb"/>
+                            <constraint firstAttribute="bottom" secondItem="O05-Uo-JyE" secondAttribute="bottom" constant="5" id="YmA-Ba-WOx"/>
+                            <constraint firstAttribute="trailing" secondItem="O05-Uo-JyE" secondAttribute="trailing" constant="5" id="rW6-eR-4bV"/>
+                            <constraint firstItem="By6-1h-aGx" firstAttribute="top" secondItem="R0Y-G6-t6z" secondAttribute="top" constant="5" id="v74-cx-xEy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="R0Y-G6-t6z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3RT-kF-7l0"/>
+                <constraint firstAttribute="bottom" secondItem="R0Y-G6-t6z" secondAttribute="bottom" id="AEE-HA-vDQ"/>
+                <constraint firstAttribute="trailing" secondItem="R0Y-G6-t6z" secondAttribute="trailing" id="k6b-Uj-HQO"/>
+                <constraint firstItem="R0Y-G6-t6z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v7f-Rc-411"/>
+            </constraints>
+            <size key="customSize" width="60" height="51"/>
+            <connections>
+                <outlet property="leftWingView" destination="zBm-Oz-xP0" id="Kfq-4U-MdR"/>
+                <outlet property="rightWingView" destination="f64-nx-Y4e" id="Cp9-bx-Xdw"/>
+                <outlet property="windowNumberLabel" destination="By6-1h-aGx" id="c7z-U7-9Pm"/>
+            </connections>
+            <point key="canvasLocation" x="-1416" y="-165"/>
+        </collectionViewCell>
+    </objects>
+</document>

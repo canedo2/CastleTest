@@ -19,7 +19,6 @@
 		B35E6C5325790724005ACC76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C5225790724005ACC76 /* SwiftPackageProductDependency */; };
 		B35E6C6125790849005ACC76 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C6025790849005ACC76 /* ViewModelType.swift */; };
 		B35E6C6E2579096C005ACC76 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C6D2579096C005ACC76 /* Assembler.swift */; };
-		B35E6C7625790AF8005ACC76 /* CastleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C7525790AF8005ACC76 /* CastleViewController.swift */; };
 		B35E6C8025790FB8005ACC76 /* CastleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C7F25790FB8005ACC76 /* CastleViewModel.swift */; };
 		B35E6C86257916CD005ACC76 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C85257916CD005ACC76 /* Castle.swift */; };
 		B35E6C8B257916DA005ACC76 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C8A257916DA005ACC76 /* Window.swift */; };
@@ -27,7 +26,10 @@
 		B35E6C9425792180005ACC76 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C85257916CD005ACC76 /* Castle.swift */; };
 		B35E6C9825792182005ACC76 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C8A257916DA005ACC76 /* Window.swift */; };
 		B35E6C9C25792184005ACC76 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C8F2579172C005ACC76 /* Visitor.swift */; };
-		B35E6CA625792492005ACC76 /* CastleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E6CA425792492005ACC76 /* CastleViewController.xib */; };
+		B35E6CC025796CC1005ACC76 /* CastleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */; };
+		B35E6CC125796CC1005ACC76 /* CastleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */; };
+		B35E6CD12579750F005ACC76 /* WindowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */; };
+		B35E6CD22579750F005ACC76 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */; };
 		C8EAD8A37D16E87DC90C35EA /* Pods_CastleTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CFDB8707BDB426D7F05F8 /* Pods_CastleTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		287C4BEC5F46E07EF6261658 /* Pods-CastleTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.release.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		32D5BC2993DDE08583BFBBC9 /* Pods-CastleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.debug.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4A94D4F006BD7251B87E0247 /* Pods-CastleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.release.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.release.xcconfig"; sourceTree = "<group>"; };
+		77B444C09AAD35234B1C618E /* Pods-CastleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.debug.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9A70CA6E606F91B9F00A6FA3 /* Pods-CastleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.release.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.release.xcconfig"; sourceTree = "<group>"; };
 		B35E6C1425790433005ACC76 /* CastleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35E6C1725790433005ACC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35E6C1B25790433005ACC76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -66,15 +70,19 @@
 		B35E6C3B25790434005ACC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B35E6C6025790849005ACC76 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		B35E6C6D2579096C005ACC76 /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
-		B35E6C7525790AF8005ACC76 /* CastleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleViewController.swift; sourceTree = "<group>"; };
 		B35E6C7F25790FB8005ACC76 /* CastleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleViewModel.swift; sourceTree = "<group>"; };
 		B35E6C85257916CD005ACC76 /* Castle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
 		B35E6C8A257916DA005ACC76 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
 		B35E6C8F2579172C005ACC76 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
-		B35E6CA425792492005ACC76 /* CastleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastleViewController.xib; sourceTree = "<group>"; };
+		B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleViewController.swift; sourceTree = "<group>"; };
+		B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastleViewController.xib; sourceTree = "<group>"; };
+		B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCollectionViewCell.swift; sourceTree = "<group>"; };
+		B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		BDB1EC19CD7997D95050995B /* Pods-CastleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C597DA18FD5D4E5A30216EF7 /* Pods-CastleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7CFDB8707BDB426D7F05F8 /* Pods_CastleTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CastleTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0489137149450D7AB947C6B /* Pods_CastleTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CastleTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB98E8B253143FF4071B121 /* Pods-CastleTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.release.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,17 @@
 				BDB1EC19CD7997D95050995B /* Pods-CastleTestTests.debug.xcconfig */,
 				287C4BEC5F46E07EF6261658 /* Pods-CastleTestTests.release.xcconfig */,
 			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D4AB522C06C160C1E07468D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77B444C09AAD35234B1C618E /* Pods-CastleTest.debug.xcconfig */,
+				9A70CA6E606F91B9F00A6FA3 /* Pods-CastleTest.release.xcconfig */,
+				C597DA18FD5D4E5A30216EF7 /* Pods-CastleTestTests.debug.xcconfig */,
+				EEB98E8B253143FF4071B121 /* Pods-CastleTestTests.release.xcconfig */,
+			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
@@ -135,8 +154,8 @@
 				B35E6C2D25790434005ACC76 /* CastleTestTests */,
 				B35E6C3825790434005ACC76 /* CastleTestUITests */,
 				B35E6C1525790433005ACC76 /* Products */,
-				13570D60311E0F73AE087DE2 /* Pods */,
 				9E1A352D71107F216265D988 /* Frameworks */,
+				5D4AB522C06C160C1E07468D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +256,9 @@
 		B35E6C6825790876005ACC76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				13570D60311E0F73AE087DE2 /* Pods */,
+				B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */,
+				B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -259,9 +281,9 @@
 		B35E6C6C257908C8005ACC76 /* Castle */ = {
 			isa = PBXGroup;
 			children = (
-				B35E6C7525790AF8005ACC76 /* CastleViewController.swift */,
 				B35E6C7F25790FB8005ACC76 /* CastleViewModel.swift */,
-				B35E6CA425792492005ACC76 /* CastleViewController.xib */,
+				B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */,
+				B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */,
 			);
 			path = Castle;
 			sourceTree = "<group>";
@@ -390,8 +412,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35E6C2425790433005ACC76 /* LaunchScreen.storyboard in Resources */,
-				B35E6CA625792492005ACC76 /* CastleViewController.xib in Resources */,
 				B35E6C2125790433005ACC76 /* Assets.xcassets in Resources */,
+				B35E6CD22579750F005ACC76 /* CollectionViewCell.xib in Resources */,
+				B35E6CC125796CC1005ACC76 /* CastleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +486,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35E6C7625790AF8005ACC76 /* CastleViewController.swift in Sources */,
+				B35E6CD12579750F005ACC76 /* WindowCollectionViewCell.swift in Sources */,
+				B35E6CC025796CC1005ACC76 /* CastleViewController.swift in Sources */,
 				B35E6C6125790849005ACC76 /* ViewModelType.swift in Sources */,
 				B35E6C8B257916DA005ACC76 /* Window.swift in Sources */,
 				B35E6C1C25790433005ACC76 /* BaseViewController.swift in Sources */,
