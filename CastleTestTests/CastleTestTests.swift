@@ -22,56 +22,56 @@ class CastleTestTests: XCTestCase {
             return
         }
         XCTAssertTrue(firstWindow.number == 1)
-        XCTAssertTrue(firstWindow.isClosed)
-        XCTAssertTrue(!firstWindow.isOpened)
-        XCTAssertTrue(!firstWindow.isRightWingOpened)
-        XCTAssertTrue(!firstWindow.isLeftWingOpened)
+        XCTAssertTrue(!firstWindow.isClosed)
+        XCTAssertTrue(firstWindow.isOpened)
+        XCTAssertTrue(firstWindow.isRightWingOpened)
+        XCTAssertTrue(firstWindow.isLeftWingOpened)
         
         guard let lastWindow = castle.windows.last else {
             XCTFail()
             return
         }
         XCTAssertTrue(lastWindow.number == Castle.totalWindowsCount)
-        XCTAssertTrue(lastWindow.isClosed)
-        XCTAssertTrue(!lastWindow.isOpened)
-        XCTAssertTrue(!lastWindow.isRightWingOpened)
-        XCTAssertTrue(!lastWindow.isLeftWingOpened)
+        XCTAssertTrue(!lastWindow.isClosed)
+        XCTAssertTrue(lastWindow.isOpened)
+        XCTAssertTrue(lastWindow.isRightWingOpened)
+        XCTAssertTrue(lastWindow.isLeftWingOpened)
     }
     
     func testWindowsState() throws {
-        castle.windows.forEach { XCTAssertTrue($0.state == .closed) }
+        castle.windows.forEach { XCTAssertTrue($0.state == .opened) }
         
         let window1 = Window(number: 1)
-        XCTAssert(window1.isClosed)
-        XCTAssert(!window1.isOpened)
-        XCTAssertTrue(!window1.isLeftWingOpened)
-        XCTAssertTrue(!window1.isRightWingOpened)
-        XCTAssertTrue(window1.state == .closed)
+        XCTAssert(!window1.isClosed)
+        XCTAssert(window1.isOpened)
+        XCTAssertTrue(window1.isLeftWingOpened)
+        XCTAssertTrue(window1.isRightWingOpened)
+        XCTAssertTrue(window1.state == .opened)
         
         let window2 = Window(number: 2)
-        window2.isLeftWingOpened = true
+        window2.isLeftWingOpened = false
         XCTAssertTrue(!window2.isClosed)
         XCTAssertTrue(!window2.isOpened)
-        XCTAssertTrue(!window2.isRightWingOpened)
-        XCTAssertTrue(window2.isLeftWingOpened)
-        XCTAssertTrue(window2.state == .leftWingOpened)
+        XCTAssertTrue(window2.isRightWingOpened)
+        XCTAssertTrue(!window2.isLeftWingOpened)
+        XCTAssertTrue(window2.state == .rightWingOpened)
         
         let window3 = Window(number: 3)
-        window3.isRightWingOpened = true
+        window3.isRightWingOpened = false
         XCTAssertTrue(!window3.isClosed)
         XCTAssertTrue(!window3.isOpened)
-        XCTAssertTrue(window3.isRightWingOpened)
-        XCTAssertTrue(!window3.isLeftWingOpened)
-        XCTAssertTrue(window3.state == .rightWingOpened)
+        XCTAssertTrue(!window3.isRightWingOpened)
+        XCTAssertTrue(window3.isLeftWingOpened)
+        XCTAssertTrue(window3.state == .leftWingOpened)
         
         let window4 = Window(number: 4)
-        window4.isRightWingOpened = true
-        window4.isLeftWingOpened = true
-        XCTAssertTrue(!window4.isClosed)
-        XCTAssertTrue(window4.isOpened)
-        XCTAssertTrue(window4.isRightWingOpened)
-        XCTAssertTrue(window4.isLeftWingOpened)
-        XCTAssertTrue(window4.state == .opened)
+        window4.isRightWingOpened = false
+        window4.isLeftWingOpened = false
+        XCTAssertTrue(window4.isClosed)
+        XCTAssertTrue(!window4.isOpened)
+        XCTAssertTrue(!window4.isRightWingOpened)
+        XCTAssertTrue(!window4.isLeftWingOpened)
+        XCTAssertTrue(window4.state == .closed)
         
     }
     
@@ -80,7 +80,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor1)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+        let expectedDescription = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -89,7 +89,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor2)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "CDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCDCD"
+        let expectedDescription = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -100,7 +100,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor2)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "IAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIAIA"
+        let expectedDescription = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -113,7 +113,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor3)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "IAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIAIIIAIA"
+        let expectedDescription = "AAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIAAIA"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -129,7 +129,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor4)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "IAIDIIIDIAIDIAIDIIIDIAIDIAIDIIIDIAIDIAIDIIIDIAIDIAIDIIIDIAIDIAID"
+        let expectedDescription = "AAIDAIADIAADAAIDAIADIAADAAIDAIADIAADAAIDAIADIAADAAIDAIADIAADAAID"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -138,7 +138,7 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: visitor61)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCICCC"
+        let expectedDescription = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -147,13 +147,13 @@ class CastleTestTests: XCTestCase {
         castle.getVisitedBy(visitor: lastVisitor)
         
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCD"
+        let expectedDescription = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI"
         XCTAssertTrue(description == expectedDescription)
         
         castle.getVisitedBy(visitor: lastVisitor)
         
         let description2 = castle.getWindowsCurrentStateDescription()
-        let expectedDescription2 = "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC"
+        let expectedDescription2 = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
         XCTAssertTrue(description2 == expectedDescription2)
     }
     
@@ -164,7 +164,7 @@ class CastleTestTests: XCTestCase {
         }
         visitors.forEach { castle.getVisitedBy(visitor: $0) }
         let description = castle.getWindowsCurrentStateDescription()
-        let expectedDescription = "IAIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIC"
+        let expectedDescription = "AAIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIDIC"
         XCTAssertTrue(description == expectedDescription)
     }
     
@@ -216,7 +216,7 @@ class CastleTestTests: XCTestCase {
             print(castle.getWindowsCurrentStateDescription())
         }
         XCTAssertTrue(castle.getWinners(openWins: false).count == 0)
-        XCTAssertTrue(castle.getWinners(openWins: true).count == 1)
+        XCTAssertTrue(castle.getWinners(openWins: true).count == 2)
     }
 
 }

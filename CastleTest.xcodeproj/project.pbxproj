@@ -8,15 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		048F4BD09FCAE3DDD92B6F0E /* Pods_CastleTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0489137149450D7AB947C6B /* Pods_CastleTest.framework */; };
+		B358BDFA257EB22800716839 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B358BDF9257EB22800716839 /* RxSwift */; };
+		B358BDFE257EB22800716839 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B358BDFD257EB22800716839 /* RxRelay */; };
+		B358BE00257EB22800716839 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B358BDFF257EB22800716839 /* RxCocoa */; };
+		B358BE08257EB80E00716839 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = B358BE07257EB80E00716839 /* Differentiator */; };
+		B358BE0A257EB80E00716839 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = B358BE09257EB80E00716839 /* RxDataSources */; };
+		B358BE13257EC12200716839 /* SectionOfWindows.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358BE12257EC12200716839 /* SectionOfWindows.swift */; };
+		B358BE1B257EC12F00716839 /* WindowViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358BE1A257EC12F00716839 /* WindowViewData.swift */; };
+		B358BE24257EC96300716839 /* WindowCastleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358BE22257EC96300716839 /* WindowCastleCollectionViewCell.swift */; };
+		B358BE25257EC96300716839 /* WindowCastleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B358BE23257EC96300716839 /* WindowCastleCollectionViewCell.xib */; };
 		B35E6C1825790433005ACC76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C1725790433005ACC76 /* AppDelegate.swift */; };
 		B35E6C1C25790433005ACC76 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C1B25790433005ACC76 /* BaseViewController.swift */; };
 		B35E6C2125790433005ACC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35E6C2025790433005ACC76 /* Assets.xcassets */; };
 		B35E6C2425790433005ACC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35E6C2225790433005ACC76 /* LaunchScreen.storyboard */; };
 		B35E6C2F25790434005ACC76 /* CastleTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C2E25790434005ACC76 /* CastleTestTests.swift */; };
 		B35E6C3A25790434005ACC76 /* CastleTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C3925790434005ACC76 /* CastleTestUITests.swift */; };
-		B35E6C4F25790724005ACC76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C4E25790724005ACC76 /* SwiftPackageProductDependency */; };
-		B35E6C5125790724005ACC76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C5025790724005ACC76 /* SwiftPackageProductDependency */; };
-		B35E6C5325790724005ACC76 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C5225790724005ACC76 /* SwiftPackageProductDependency */; };
+		B35E6C4F25790724005ACC76 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C4E25790724005ACC76 /* Moya */; };
+		B35E6C5125790724005ACC76 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C5025790724005ACC76 /* ReactiveMoya */; };
+		B35E6C5325790724005ACC76 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = B35E6C5225790724005ACC76 /* RxMoya */; };
 		B35E6C6125790849005ACC76 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C6025790849005ACC76 /* ViewModelType.swift */; };
 		B35E6C6E2579096C005ACC76 /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C6D2579096C005ACC76 /* Assembler.swift */; };
 		B35E6C8025790FB8005ACC76 /* CastleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C7F25790FB8005ACC76 /* CastleViewModel.swift */; };
@@ -28,8 +37,6 @@
 		B35E6C9C25792184005ACC76 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6C8F2579172C005ACC76 /* Visitor.swift */; };
 		B35E6CC025796CC1005ACC76 /* CastleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */; };
 		B35E6CC125796CC1005ACC76 /* CastleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */; };
-		B35E6CD12579750F005ACC76 /* WindowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */; };
-		B35E6CD22579750F005ACC76 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */; };
 		C8EAD8A37D16E87DC90C35EA /* Pods_CastleTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7CFDB8707BDB426D7F05F8 /* Pods_CastleTestTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,10 @@
 		4A94D4F006BD7251B87E0247 /* Pods-CastleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.release.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.release.xcconfig"; sourceTree = "<group>"; };
 		77B444C09AAD35234B1C618E /* Pods-CastleTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.debug.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.debug.xcconfig"; sourceTree = "<group>"; };
 		9A70CA6E606F91B9F00A6FA3 /* Pods-CastleTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTest.release.xcconfig"; path = "Target Support Files/Pods-CastleTest/Pods-CastleTest.release.xcconfig"; sourceTree = "<group>"; };
+		B358BE12257EC12200716839 /* SectionOfWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOfWindows.swift; sourceTree = "<group>"; };
+		B358BE1A257EC12F00716839 /* WindowViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowViewData.swift; sourceTree = "<group>"; };
+		B358BE22257EC96300716839 /* WindowCastleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCastleCollectionViewCell.swift; sourceTree = "<group>"; };
+		B358BE23257EC96300716839 /* WindowCastleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WindowCastleCollectionViewCell.xib; sourceTree = "<group>"; };
 		B35E6C1425790433005ACC76 /* CastleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CastleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35E6C1725790433005ACC76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35E6C1B25790433005ACC76 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +87,6 @@
 		B35E6C8F2579172C005ACC76 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
 		B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastleViewController.swift; sourceTree = "<group>"; };
 		B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastleViewController.xib; sourceTree = "<group>"; };
-		B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowCollectionViewCell.swift; sourceTree = "<group>"; };
-		B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		BDB1EC19CD7997D95050995B /* Pods-CastleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C597DA18FD5D4E5A30216EF7 /* Pods-CastleTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CastleTestTests.debug.xcconfig"; path = "Target Support Files/Pods-CastleTestTests/Pods-CastleTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE7CFDB8707BDB426D7F05F8 /* Pods_CastleTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CastleTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,9 +99,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35E6C5325790724005ACC76 /* BuildFile in Frameworks */,
-				B35E6C4F25790724005ACC76 /* BuildFile in Frameworks */,
-				B35E6C5125790724005ACC76 /* BuildFile in Frameworks */,
+				B35E6C5325790724005ACC76 /* RxMoya in Frameworks */,
+				B35E6C4F25790724005ACC76 /* Moya in Frameworks */,
+				B358BDFE257EB22800716839 /* RxRelay in Frameworks */,
+				B358BDFA257EB22800716839 /* RxSwift in Frameworks */,
+				B358BE0A257EB80E00716839 /* RxDataSources in Frameworks */,
+				B35E6C5125790724005ACC76 /* ReactiveMoya in Frameworks */,
+				B358BE08257EB80E00716839 /* Differentiator in Frameworks */,
+				B358BE00257EB22800716839 /* RxCocoa in Frameworks */,
 				048F4BD09FCAE3DDD92B6F0E /* Pods_CastleTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,7 +148,6 @@
 				C597DA18FD5D4E5A30216EF7 /* Pods-CastleTestTests.debug.xcconfig */,
 				EEB98E8B253143FF4071B121 /* Pods-CastleTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,6 +158,17 @@
 				CE7CFDB8707BDB426D7F05F8 /* Pods_CastleTestTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B358BE11257EC10200716839 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				B358BE12257EC12200716839 /* SectionOfWindows.swift */,
+				B358BE1A257EC12F00716839 /* WindowViewData.swift */,
+				B358BE22257EC96300716839 /* WindowCastleCollectionViewCell.swift */,
+				B358BE23257EC96300716839 /* WindowCastleCollectionViewCell.xib */,
+			);
+			path = Window;
 			sourceTree = "<group>";
 		};
 		B35E6C0B25790433005ACC76 = {
@@ -176,6 +200,7 @@
 				B35E6C5925790777005ACC76 /* Resources */,
 				B35E6C5825790765005ACC76 /* General */,
 				B35E6C572579075C005ACC76 /* Core */,
+				13570D60311E0F73AE087DE2 /* Pods */,
 				B35E6C2525790433005ACC76 /* Info.plist */,
 			);
 			path = CastleTest;
@@ -256,9 +281,7 @@
 		B35E6C6825790876005ACC76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				13570D60311E0F73AE087DE2 /* Pods */,
-				B35E6CCF2579750F005ACC76 /* WindowCollectionViewCell.swift */,
-				B35E6CD02579750F005ACC76 /* CollectionViewCell.xib */,
+				B358BE11257EC10200716839 /* Window */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -316,9 +339,14 @@
 			);
 			name = CastleTest;
 			packageProductDependencies = (
-				B35E6C4E25790724005ACC76 /* SwiftPackageProductDependency */,
-				B35E6C5025790724005ACC76 /* SwiftPackageProductDependency */,
-				B35E6C5225790724005ACC76 /* SwiftPackageProductDependency */,
+				B35E6C4E25790724005ACC76 /* Moya */,
+				B35E6C5025790724005ACC76 /* ReactiveMoya */,
+				B35E6C5225790724005ACC76 /* RxMoya */,
+				B358BDF9257EB22800716839 /* RxSwift */,
+				B358BDFD257EB22800716839 /* RxRelay */,
+				B358BDFF257EB22800716839 /* RxCocoa */,
+				B358BE07257EB80E00716839 /* Differentiator */,
+				B358BE09257EB80E00716839 /* RxDataSources */,
 			);
 			productName = CastleTest;
 			productReference = B35E6C1425790433005ACC76 /* CastleTest.app */;
@@ -393,7 +421,9 @@
 			);
 			mainGroup = B35E6C0B25790433005ACC76;
 			packageReferences = (
-				B35E6C4D25790724005ACC76 /* RemoteSwiftPackageReference */,
+				B35E6C4D25790724005ACC76 /* XCRemoteSwiftPackageReference "Moya" */,
+				B358BDF8257EB22800716839 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				B358BE06257EB80E00716839 /* XCRemoteSwiftPackageReference "RxDataSources" */,
 			);
 			productRefGroup = B35E6C1525790433005ACC76 /* Products */;
 			projectDirPath = "";
@@ -413,7 +443,7 @@
 			files = (
 				B35E6C2425790433005ACC76 /* LaunchScreen.storyboard in Resources */,
 				B35E6C2125790433005ACC76 /* Assets.xcassets in Resources */,
-				B35E6CD22579750F005ACC76 /* CollectionViewCell.xib in Resources */,
+				B358BE25257EC96300716839 /* WindowCastleCollectionViewCell.xib in Resources */,
 				B35E6CC125796CC1005ACC76 /* CastleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,14 +516,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35E6CD12579750F005ACC76 /* WindowCollectionViewCell.swift in Sources */,
 				B35E6CC025796CC1005ACC76 /* CastleViewController.swift in Sources */,
 				B35E6C6125790849005ACC76 /* ViewModelType.swift in Sources */,
 				B35E6C8B257916DA005ACC76 /* Window.swift in Sources */,
+				B358BE1B257EC12F00716839 /* WindowViewData.swift in Sources */,
 				B35E6C1C25790433005ACC76 /* BaseViewController.swift in Sources */,
 				B35E6C86257916CD005ACC76 /* Castle.swift in Sources */,
+				B358BE13257EC12200716839 /* SectionOfWindows.swift in Sources */,
 				B35E6C6E2579096C005ACC76 /* Assembler.swift in Sources */,
 				B35E6C1825790433005ACC76 /* AppDelegate.swift in Sources */,
+				B358BE24257EC96300716839 /* WindowCastleCollectionViewCell.swift in Sources */,
 				B35E6C902579172C005ACC76 /* Visitor.swift in Sources */,
 				B35E6C8025790FB8005ACC76 /* CastleViewModel.swift in Sources */,
 			);
@@ -829,7 +861,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B35E6C4D25790724005ACC76 /* RemoteSwiftPackageReference */ = {
+		B358BDF8257EB22800716839 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		B358BE06257EB80E00716839 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		B35E6C4D25790724005ACC76 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
 			requirement = {
@@ -840,19 +888,44 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B35E6C4E25790724005ACC76 /* SwiftPackageProductDependency */ = {
+		B358BDF9257EB22800716839 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B35E6C4D25790724005ACC76 /* RemoteSwiftPackageReference */;
+			package = B358BDF8257EB22800716839 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		B358BDFD257EB22800716839 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B358BDF8257EB22800716839 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		B358BDFF257EB22800716839 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B358BDF8257EB22800716839 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B358BE07257EB80E00716839 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B358BE06257EB80E00716839 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		B358BE09257EB80E00716839 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B358BE06257EB80E00716839 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		B35E6C4E25790724005ACC76 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B35E6C4D25790724005ACC76 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = Moya;
 		};
-		B35E6C5025790724005ACC76 /* SwiftPackageProductDependency */ = {
+		B35E6C5025790724005ACC76 /* ReactiveMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B35E6C4D25790724005ACC76 /* RemoteSwiftPackageReference */;
+			package = B35E6C4D25790724005ACC76 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = ReactiveMoya;
 		};
-		B35E6C5225790724005ACC76 /* SwiftPackageProductDependency */ = {
+		B35E6C5225790724005ACC76 /* RxMoya */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B35E6C4D25790724005ACC76 /* RemoteSwiftPackageReference */;
+			package = B35E6C4D25790724005ACC76 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
 		};
 /* End XCSwiftPackageProductDependency section */

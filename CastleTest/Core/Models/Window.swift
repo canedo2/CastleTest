@@ -7,8 +7,8 @@ enum WindowState:String {
 
 class Window {
     let number: Int
-    var isRightWingOpened: Bool = false
-    var isLeftWingOpened: Bool = false
+    var isRightWingOpened: Bool = true
+    var isLeftWingOpened: Bool = true
     
     var previousNumber: Int {
         if number == 1 { return Castle.totalWindowsCount } //New business rule
