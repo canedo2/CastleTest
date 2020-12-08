@@ -2,14 +2,10 @@ class Castle {
     
     static let totalWindowsCount: Int = 64
     
-    let windows:[Window]
+    var windows:[Window] = []
     
     init() {
-        var temporalWindows = [Window]()
-        for value in 1...Castle.totalWindowsCount {
-            temporalWindows.append(Window(number: value))
-        }
-        windows = temporalWindows
+        resetCastle()
     }
     
     //Testing constructor(mainly)
@@ -40,5 +36,13 @@ class Castle {
             }.map{$0.number}
         }
         
+    }
+    
+    func resetCastle() {
+        var temporalWindows = [Window]()
+        for value in 1...Castle.totalWindowsCount {
+            temporalWindows.append(Window(number: value))
+        }
+        windows = temporalWindows
     }
 }
