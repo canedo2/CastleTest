@@ -163,8 +163,6 @@
 		B358BE11257EC10200716839 /* Window */ = {
 			isa = PBXGroup;
 			children = (
-				B358BE12257EC12200716839 /* SectionOfWindows.swift */,
-				B358BE1A257EC12F00716839 /* WindowViewData.swift */,
 				B358BE22257EC96300716839 /* WindowCastleCollectionViewCell.swift */,
 				B358BE23257EC96300716839 /* WindowCastleCollectionViewCell.xib */,
 			);
@@ -304,6 +302,7 @@
 		B35E6C6C257908C8005ACC76 /* Castle */ = {
 			isa = PBXGroup;
 			children = (
+				B3D5B8D72580778B00B6F10C /* ViewData */,
 				B35E6C7F25790FB8005ACC76 /* CastleViewModel.swift */,
 				B35E6CBE25796CC1005ACC76 /* CastleViewController.swift */,
 				B35E6CBF25796CC1005ACC76 /* CastleViewController.xib */,
@@ -319,6 +318,15 @@
 				B35E6C8F2579172C005ACC76 /* Visitor.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B3D5B8D72580778B00B6F10C /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+				B358BE12257EC12200716839 /* SectionOfWindows.swift */,
+				B358BE1A257EC12F00716839 /* WindowViewData.swift */,
+			);
+			path = ViewData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

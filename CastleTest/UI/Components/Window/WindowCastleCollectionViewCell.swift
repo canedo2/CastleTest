@@ -6,8 +6,8 @@ class WindowCastleCollectionViewCell: UICollectionViewCell {
     static let cellSize = CGFloat((UIScreen.main.bounds.width - 20 - 7 * 10)/8)
     
     @IBOutlet private weak var windowNumberLabel: UILabel!
-    @IBOutlet private weak var leftWingView: UIView!
-    @IBOutlet private weak var rightWingView: UIView!
+    @IBOutlet private weak var leftWingImageView: UIImageView!
+    @IBOutlet private weak var rightWingImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -15,8 +15,8 @@ class WindowCastleCollectionViewCell: UICollectionViewCell {
     
     func configure(number: Int, isLeftWingViewOpened: Bool, isRightWingOpened: Bool) {
         windowNumberLabel.text = "\(number)"
-        leftWingView.backgroundColor = isLeftWingViewOpened ? .clear : .gray
-        rightWingView.backgroundColor = isRightWingOpened ? .clear : .gray
+        leftWingImageView.image = isLeftWingViewOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "closed")
+        rightWingImageView.image = isRightWingOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "closed")
     }
 
 }

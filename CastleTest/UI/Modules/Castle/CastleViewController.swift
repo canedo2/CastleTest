@@ -16,6 +16,7 @@ class CastleViewController: BaseViewController {
     var viewModel: CastleViewModel?
     private let bag = DisposeBag()
     
+    @IBOutlet weak var labelsBackgroundView: UIView!
     @IBOutlet weak var openedCountLabel: UILabel!
     @IBOutlet weak var leftCountLabel: UILabel!
     @IBOutlet weak var rightCountLabel: UILabel!
@@ -44,6 +45,7 @@ class CastleViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        applyStyle()
         setupRx()
     }
     
@@ -69,7 +71,7 @@ class CastleViewController: BaseViewController {
         viewModel?.output.winners
             .filter({ $0 != nil})
             .drive(onNext: { winnersInfo in
-                let title = winnersInfo!.openWins ? "Ganadores por reglas inciales" : "Ganadores todos los abiertos ganan"
+                let title = winnersInfo!.openWins ? "Ganadores todos los abiertos ganan" : "Ganadores por reglas inciales"
                 let winners = winnersInfo!.winners
                 let winnersCount = winners.count
                 let message = winnersCount > 0 ? "Los ganadores son:\n\(winners.map{"\($0)"}.joined(separator: " - "))" : "No hay ganadores"
@@ -78,6 +80,10 @@ class CastleViewController: BaseViewController {
                 alert.addAction(action)
                 self.present(alert, animated: true, completion: nil)
         }).disposed(by: bag)
+    }
+    
+    func applyStyle() {
+        labelsBackgroundView.layer.cornerRadius = 10.0
     }
     
     @IBAction func startVisiting(_ sender: UIButton) {
