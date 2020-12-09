@@ -1,5 +1,3 @@
-![alt tag](AppCapture.png "iPhone 12 Pro Max screenshot")
-
 # CastleTest
 Esta app está hecha como test técnico en Diciembre de 2020. El enunciado de los requerimientos será especificado en los siguientes puntos.
 
@@ -40,8 +38,12 @@ Esta app está hecha como test técnico en Diciembre de 2020. El enunciado de lo
 - Añada una función para devolver los números de los visitantes que ganaron este juego. El resultado es un array de enteros.
 - No hay suficientes ganadores, así que añada una segunda función que modifique la regla para que los visitantes cuyo número de ventana esté abierto (A) que ganen.
 - Una vez escritas estas funciones escribir un programa de test iOS donde probarlas, el diseño de la interfaz es libre, pero al menos deberá:
-- - mostrar el estado de las ventanas
-- - mostrar cuantas ventanas hay en cada estado 
-- - el listado de ganadores e permitirá resetear el estado de las ventanas al estado inicial (todas abiertas)
-- - Se permitirá calcular el paso de los 64 visitantes por las 64 ventanas dado el estado actual de las ventanas.
-- - Calcular los ganadores mediante las dos reglas descritas en los puntos 2 y 3.
+- 1. mostrar el estado de las ventanas
+- 2. mostrar cuantas ventanas hay en cada estado 
+- 3. el listado de ganadores e permitirá resetear el estado de las ventanas al estado inicial (todas abiertas)
+- 4. Se permitirá calcular el paso de los 64 visitantes por las 64 ventanas dado el estado actual de las ventanas.
+- 5. Calcular los ganadores mediante las dos reglas descritas en los puntos 2 y 3.
+
+
+## Captura
+![alt tag](AppCapture.png)
