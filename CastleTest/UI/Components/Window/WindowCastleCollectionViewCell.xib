@@ -33,7 +33,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="opened" translatesAutoresizingMaskIntoConstraints="NO" id="Bfm-XK-mdl">
                                         <rect key="frame" x="0.0" y="0.0" width="19.5" height="35.5"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closed" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-8X-7YL">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Closed" translatesAutoresizingMaskIntoConstraints="NO" id="u8z-8X-7YL">
                                         <rect key="frame" x="24.5" y="0.0" width="19.5" height="35.5"/>
                                     </imageView>
                                 </subviews>
@@ -74,7 +74,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="closed" width="40" height="52"/>
+        <image name="Closed" width="40" height="52"/>
         <image name="opened" width="18" height="22"/>
         <image name="window" width="160" height="160"/>
     </resources>

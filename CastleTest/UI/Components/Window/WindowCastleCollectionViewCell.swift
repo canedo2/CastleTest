@@ -15,8 +15,8 @@ class WindowCastleCollectionViewCell: UICollectionViewCell {
     
     func configure(number: Int, isLeftWingViewOpened: Bool, isRightWingOpened: Bool) {
         windowNumberLabel.text = "\(number)"
-        leftWingImageView.image = isLeftWingViewOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "closed")
-        rightWingImageView.image = isRightWingOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "closed")
+        leftWingImageView.image = isLeftWingViewOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "Closed")
+        rightWingImageView.image = isRightWingOpened ? #imageLiteral(resourceName: "opened") : #imageLiteral(resourceName: "Closed")
     }
 
 }
